@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo installing maven...
+      - mvn -version
+  
+  build:
+    commands:
+      - echo building java project...
+      - mvn clean package
+
+artifacts:
+  files:
+    - target/demo-cicd-dva-1.0-SNAPSHOT.jar
+    
